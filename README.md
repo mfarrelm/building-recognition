@@ -15,7 +15,7 @@ Trained with transfer learning using MobileNetV2. Get F1-Score : 77.83
 ### To predict an image, run :
 
 ``` bash
-$ python3 predict.py image_pau.jpg
+$ python3 predict.py image.jpg
 ```
 
 ### List building :
