@@ -20,4 +20,4 @@ $ python3 predict.py image_pau.jpg
 
 ### List building :
 
-['Aula_Barat', 'Aula_Timur', 'CC_Barat', 'CC_Timur', 'Labtek_V', 'Labtek_VI', 'Labtek_VII', 'Labtek_VIII', 'Oktagon', 'PAU', 'Perpustakaan', 'TVST']
+*['Aula_Barat', 'Aula_Timur', 'CC_Barat', 'CC_Timur', 'Labtek_V', 'Labtek_VI', 'Labtek_VII', 'Labtek_VIII', 'Oktagon', 'PAU', 'Perpustakaan', 'TVST']*

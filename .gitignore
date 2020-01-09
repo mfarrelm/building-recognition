@@ -4,3 +4,4 @@ latih/
 uji/
 *.npy
 predict.ipynb
+*.pdf
