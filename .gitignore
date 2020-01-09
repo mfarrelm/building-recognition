@@ -1,0 +1,6 @@
+dataset_latih/
+dataset_uji/
+latih/
+uji/
+*.npy
+predict.ipynb
