@@ -2,7 +2,7 @@
 
 Final project from Engineering Data Science (TF-4063) Course.
 Can recognize several building on Institut Teknologi Bandung.
-Trained with transfer learning using MobileNetV2
+Trained with transfer learning using MobileNetV2. Get F1-Score : 77.83
 
 ### Requirements to use this program
 --------
