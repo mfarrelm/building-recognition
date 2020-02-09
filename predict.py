@@ -11,28 +11,9 @@ from keras.models import load_model
 import sys
 from PIL import Image
 
-
-# In[22]:
-def recall_m(y_true, y_pred):
-        true_positives = K.sum(K.round(K.clip(y_true * y_pred, 0, 1)))
-        possible_positives = K.sum(K.round(K.clip(y_true, 0, 1)))
-        recall = true_positives / (possible_positives + K.epsilon())
-        return recall
-
-def precision_m(y_true, y_pred):
-        true_positives = K.sum(K.round(K.clip(y_true * y_pred, 0, 1)))
-        predicted_positives = K.sum(K.round(K.clip(y_pred, 0, 1)))
-        precision = true_positives / (predicted_positives + K.epsilon())
-        return precision
-
-def f1_m(y_true, y_pred):
-    precision = precision_m(y_true, y_pred)
-    recall = recall_m(y_true, y_pred)
-    return 2*((precision*recall)/(precision+recall+K.epsilon()))
-
 model_name = 'mobile_net_7783.h5'
 try :
-    model = load_model(model_name, custom_objects= {'f1_m' : f1_m, 'precision' : precision_m, 'recall_m' : recall_m})
+    model = load_model(model_name)
 except :
     print('File ' + model_name + ' tidak ditemukan')
 
